@@ -101,7 +101,7 @@ To test the application using Postman, you can import the provided Postman colle
 
 1. Open Postman.
 2. Click on `Import`.
-3. Select `File` and upload the `Load-Balancer-Postman-Collection.json` file.
+3. Select `File` and upload the [Load-Balancer-Postman-Collection.json](./Load-Balancer-Postman-Collection.json) file.
 4. The collection will be imported, and you can use the predefined requests to test the load balancer and API server.
 
 ## Contributing
