@@ -20,7 +20,7 @@ This project implements a load balancer with different types of queues to handle
 1. Clone the repository:
 
     ```sh
-    git clone 
+    git clone https://github.com/keshavagarwal2580/keshav-agarwal-wasserstoff-BackendTask.git
     cd load-balancer
     ```
 
