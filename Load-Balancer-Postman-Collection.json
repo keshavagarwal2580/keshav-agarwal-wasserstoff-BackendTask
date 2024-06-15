@@ -1,0 +1,610 @@
+{
+    "info": {
+        "name": "Load Balancer with Queues",
+        "_postman_id": "12345678-1234-1234-1234-123456789012",
+        "description": "Collection for testing the Load Balancer with different queue types.",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Route Request (FIFO Queue) - REST Fast",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/route?apiType=rest&payloadSize=500&queueType=fifo",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000",
+                    "path": [
+                        "route"
+                    ],
+                    "query": [
+                        {
+                            "key": "apiType",
+                            "value": "rest"
+                        },
+                        {
+                            "key": "payloadSize",
+                            "value": "500"
+                        },
+                        {
+                            "key": "queueType",
+                            "value": "fifo"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Route Request (FIFO Queue) - REST Slow",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/route?apiType=rest&payloadSize=1500&queueType=fifo",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000",
+                    "path": [
+                        "route"
+                    ],
+                    "query": [
+                        {
+                            "key": "apiType",
+                            "value": "rest"
+                        },
+                        {
+                            "key": "payloadSize",
+                            "value": "1500"
+                        },
+                        {
+                            "key": "queueType",
+                            "value": "fifo"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Route Request (FIFO Queue) - GraphQL Fast",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/route?apiType=graphql&payloadSize=500&queueType=fifo",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000",
+                    "path": [
+                        "route"
+                    ],
+                    "query": [
+                        {
+                            "key": "apiType",
+                            "value": "graphql"
+                        },
+                        {
+                            "key": "payloadSize",
+                            "value": "500"
+                        },
+                        {
+                            "key": "queueType",
+                            "value": "fifo"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Route Request (FIFO Queue) - GraphQL Slow",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/route?apiType=graphql&payloadSize=1500&queueType=fifo",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000",
+                    "path": [
+                        "route"
+                    ],
+                    "query": [
+                        {
+                            "key": "apiType",
+                            "value": "graphql"
+                        },
+                        {
+                            "key": "payloadSize",
+                            "value": "1500"
+                        },
+                        {
+                            "key": "queueType",
+                            "value": "fifo"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Route Request (FIFO Queue) - gRPC Fast",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/route?apiType=grpc&payloadSize=500&queueType=fifo",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000",
+                    "path": [
+                        "route"
+                    ],
+                    "query": [
+                        {
+                            "key": "apiType",
+                            "value": "grpc"
+                        },
+                        {
+                            "key": "payloadSize",
+                            "value": "500"
+                        },
+                        {
+                            "key": "queueType",
+                            "value": "fifo"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Route Request (FIFO Queue) - gRPC Slow",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/route?apiType=grpc&payloadSize=1500&queueType=fifo",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000",
+                    "path": [
+                        "route"
+                    ],
+                    "query": [
+                        {
+                            "key": "apiType",
+                            "value": "grpc"
+                        },
+                        {
+                            "key": "payloadSize",
+                            "value": "1500"
+                        },
+                        {
+                            "key": "queueType",
+                            "value": "fifo"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Route Request (Priority Queue) - REST Fast",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/route?apiType=rest&payloadSize=500&queueType=priority&priority=1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000",
+                    "path": [
+                        "route"
+                    ],
+                    "query": [
+                        {
+                            "key": "apiType",
+                            "value": "rest"
+                        },
+                        {
+                            "key": "payloadSize",
+                            "value": "500"
+                        },
+                        {
+                            "key": "queueType",
+                            "value": "priority"
+                        },
+                        {
+                            "key": "priority",
+                            "value": "1"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Route Request (Priority Queue) - REST Slow",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/route?apiType=rest&payloadSize=1500&queueType=priority&priority=1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000",
+                    "path": [
+                        "route"
+                    ],
+                    "query": [
+                        {
+                            "key": "apiType",
+                            "value": "rest"
+                        },
+                        {
+                            "key": "payloadSize",
+                            "value": "1500"
+                        },
+                        {
+                            "key": "queueType",
+                            "value": "priority"
+                        },
+                        {
+                            "key": "priority",
+                            "value": "1"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Route Request (Priority Queue) - GraphQL Fast",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/route?apiType=graphql&payloadSize=500&queueType=priority&priority=1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000",
+                    "path": [
+                        "route"
+                    ],
+                    "query": [
+                        {
+                            "key": "apiType",
+                            "value": "graphql"
+                        },
+                        {
+                            "key": "payloadSize",
+                            "value": "500"
+                        },
+                        {
+                            "key": "queueType",
+                            "value": "priority"
+                        },
+                        {
+                            "key": "priority",
+                            "value": "1"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Route Request (Priority Queue) - GraphQL Slow",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/route?apiType=graphql&payloadSize=1500&queueType=priority&priority=1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000",
+                    "path": [
+                        "route"
+                    ],
+                    "query": [
+                        {
+                            "key": "apiType",
+                            "value": "graphql"
+                        },
+                        {
+                            "key": "payloadSize",
+                            "value": "1500"
+                        },
+                        {
+                            "key": "queueType",
+                            "value": "priority"
+                        },
+                        {
+                            "key": "priority",
+                            "value": "1"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Route Request (Priority Queue) - gRPC Fast",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/route?apiType=grpc&payloadSize=500&queueType=priority&priority=1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000",
+                    "path": [
+                        "route"
+                    ],
+                    "query": [
+                        {
+                            "key": "apiType",
+                            "value": "grpc"
+                        },
+                        {
+                            "key": "payloadSize",
+                            "value": "500"
+                        },
+                        {
+                            "key": "queueType",
+                            "value": "priority"
+                        },
+                        {
+                            "key": "priority",
+                            "value": "1"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Route Request (Priority Queue) - gRPC Slow",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/route?apiType=grpc&payloadSize=1500&queueType=priority&priority=1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000",
+                    "path": [
+                        "route"
+                    ],
+                    "query": [
+                        {
+                            "key": "apiType",
+                            "value": "grpc"
+                        },
+                        {
+                            "key": "payloadSize",
+                            "value": "1500"
+                        },
+                        {
+                            "key": "queueType",
+                            "value": "priority"
+                        },
+                        {
+                            "key": "priority",
+                            "value": "1"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Route Request (Round Robin Queue) - REST Fast",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/route?apiType=rest&payloadSize=500&queueType=round-robin",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000",
+                    "path": [
+                        "route"
+                    ],
+                    "query": [
+                        {
+                            "key": "apiType",
+                            "value": "rest"
+                        },
+                        {
+                            "key": "payloadSize",
+                            "value": "500"
+                        },
+                        {
+                            "key": "queueType",
+                            "value": "round-robin"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Route Request (Round Robin Queue) - REST Slow",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/route?apiType=rest&payloadSize=1500&queueType=round-robin",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000",
+                    "path": [
+                        "route"
+                    ],
+                    "query": [
+                        {
+                            "key": "apiType",
+                            "value": "rest"
+                        },
+                        {
+                            "key": "payloadSize",
+                            "value": "1500"
+                        },
+                        {
+                            "key": "queueType",
+                            "value": "round-robin"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Route Request (Round Robin Queue) - GraphQL Fast",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/route?apiType=graphql&payloadSize=500&queueType=round-robin",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000",
+                    "path": [
+                        "route"
+                    ],
+                    "query": [
+                        {
+                            "key": "apiType",
+                            "value": "graphql"
+                        },
+                        {
+                            "key": "payloadSize",
+                            "value": "500"
+                        },
+                        {
+                            "key": "queueType",
+                            "value": "round-robin"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Route Request (Round Robin Queue) - GraphQL Slow",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/route?apiType=graphql&payloadSize=1500&queueType=round-robin",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000",
+                    "path": [
+                        "route"
+                    ],
+                    "query": [
+                        {
+                            "key": "apiType",
+                            "value": "graphql"
+                        },
+                        {
+                            "key": "payloadSize",
+                            "value": "1500"
+                        },
+                        {
+                            "key": "queueType",
+                            "value": "round-robin"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Route Request (Round Robin Queue) - gRPC Fast",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/route?apiType=grpc&payloadSize=500&queueType=round-robin",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000",
+                    "path": [
+                        "route"
+                    ],
+                    "query": [
+                        {
+                            "key": "apiType",
+                            "value": "grpc"
+                        },
+                        {
+                            "key": "payloadSize",
+                            "value": "500"
+                        },
+                        {
+                            "key": "queueType",
+                            "value": "round-robin"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Route Request (Round Robin Queue) - gRPC Slow",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:4000/route?apiType=grpc&payloadSize=1500&queueType=round-robin",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000",
+                    "path": [
+                        "route"
+                    ],
+                    "query": [
+                        {
+                            "key": "apiType",
+                            "value": "grpc"
+                        },
+                        {
+                            "key": "payloadSize",
+                            "value": "1500"
+                        },
+                        {
+                            "key": "queueType",
+                            "value": "round-robin"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
